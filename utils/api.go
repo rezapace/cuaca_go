@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"github.com/rezapace/cuaca_go/models/weather_model"
+	"cuaca/models"
 )
 
 

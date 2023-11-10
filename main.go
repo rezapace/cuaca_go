@@ -4,7 +4,7 @@ import (
    "fmt"
    "github.com/labstack/echo/v4"
    "github.com/labstack/echo/v4/middleware"
-   "weatherapp/routes"
+   "cuaca/routes"
 )
 
 func main() {
