@@ -1,6 +1,9 @@
+// Package models mendefinisikan struktur data yang digunakan dalam proyek ini.
 package models
 
+// WeatherResponse adalah struktur data untuk menyimpan respons cuaca dari API.
 type WeatherResponse struct {
+	// Informasi lokasi seperti nama, region, dan koordinat.
 	Location struct {
 		Name           string  `json:"name"`
 		Region         string  `json:"region"`
@@ -11,6 +14,8 @@ type WeatherResponse struct {
 		LocaltimeEpoch int     `json:"localtime_epoch"`
 		Localtime      string  `json:"localtime"`
 	} `json:"location"`
+
+	// Informasi cuaca saat ini.
 	Current struct {
 		LastUpdatedEpoch int     `json:"last_updated_epoch"`
 		LastUpdated      string  `json:"last_updated"`
@@ -40,11 +45,14 @@ type WeatherResponse struct {
 		GustMph    float64 `json:"gust_mph"`
 		GustKph    float64 `json:"gust_kph"`
 	} `json:"current"`
+
+	// Informasi cuaca yang diprediksi untuk beberapa hari ke depan.
 	Forecast struct {
 		Forecastday []struct {
 			Date      string `json:"date"`
 			DateEpoch int    `json:"date_epoch"`
 			Day       struct {
+				// Informasi suhu, kecepatan angin, dan lainnya untuk suatu hari.
 				MaxtempC          float64 `json:"maxtemp_c"`
 				MaxtempF          float64 `json:"maxtemp_f"`
 				MintempC          float64 `json:"mintemp_c"`
@@ -70,6 +78,8 @@ type WeatherResponse struct {
 				} `json:"condition"`
 				Uv float64 `json:"uv"`
 			} `json:"day"`
+
+			// Informasi astronomi seperti waktu terbit dan terbenam matahari.
 			Astro struct {
 				Sunrise          string `json:"sunrise"`
 				Sunset           string `json:"sunset"`
@@ -80,7 +90,10 @@ type WeatherResponse struct {
 				IsMoonUp         int    `json:"is_moon_up"`
 				IsSunUp          int    `json:"is_sun_up"`
 			} `json:"astro"`
+
+			// Informasi cuaca per jam.
 			Hour []struct {
+				// Informasi suhu, kecepatan angin, dan lainnya untuk suatu jam.
 				TimeEpoch int     `json:"time_epoch"`
 				Time      string  `json:"time"`
 				TempC     float64 `json:"temp_c"`
