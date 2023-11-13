@@ -25,7 +25,7 @@ http://localhost:8080/weather?location=jakarta
 
 ![Logo](https://github.com/rezapace/cuaca_go/blob/main/output/runing%20echo.jpg?raw=true)
 
-![Logo](https://github.com/rezapace/cuaca_go/blob/main/output/apostman%20output.jpg?raw=true)
+![Logo](https://github.com/rezapace/cuaca_go/blob/main/output/postman%20output.jpg?raw=true)
 
 
 Terima kasih telah menggunakan Cuaca Golang! 🌤️💻
