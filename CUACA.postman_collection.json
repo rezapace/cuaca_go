@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "35aa3de0-5003-4245-ac0c-27608d10162b",
+		"name": "CUACA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26142588"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/weather?location=jakarta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/weather?location=jakarta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "jakarta"
+						}
+					]
+				},
+				"description": "mendapatkan cuaca dari api https://www.weatherapi.com/ dan menjalankan menggunakan framework echo"
+			},
+			"response": []
+		}
+	]
+}
