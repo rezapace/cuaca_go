@@ -1,31 +1,43 @@
-
 # Cuaca Golang 🌦️
 
-Selamat datang di proyek Cuaca Golang! Proyek ini dibuat untuk memberikan informasi cuaca yang akurat dan terkini menggunakan bahasa pemrograman Golang. Dengan menggunakan API cuaca, proyek ini menyajikan data cuaca yang mudah dibaca dan diintegrasikan ke dalam proyek Golang Anda.
+Welcome to the Cuaca Golang project! This project is designed to provide accurate and up-to-date weather information using the Go programming language. By leveraging a weather API, this project delivers easy-to-read weather data that can be seamlessly integrated into your Go projects.
 
-## Cara Menjalankan
+## Features
 
-```bash
-git clone https://github.com/rezapace/cuaca_go
-```
+- Accurate and current weather information
+- Easy integration with Go projects
+- Simple and clean API usage
 
-```bash
-go mod tidy
-```
+## How to Run
 
-```bash
-go run main.go
-```
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/rezapace/cuaca_go
+    ```
 
-Postman 
+2. Tidy up the dependencies:
+    ```bash
+    go mod tidy
+    ```
 
+3. Run the application:
+    ```bash
+    go run main.go
+    ```
+
+## Postman
+
+To test the API using Postman, use the following URL:
 ```bash
 http://localhost:8080/weather?location=jakarta
 ```
 
-![Logo](https://github.com/rezapace/cuaca_go/blob/main/output/runing%20echo.jpg?raw=true)
+## Screenshots
 
-![Logo](https://github.com/rezapace/cuaca_go/blob/main/output/postman%20output.jpg?raw=true)
+Running the application:
+![Running Application](https://github.com/rezapace/cuaca_go/blob/main/output/runing%20echo.jpg?raw=true)
 
+Postman output:
+![Postman Output](https://github.com/rezapace/cuaca_go/blob/main/output/postman%20output.jpg?raw=true)
 
-Terima kasih telah menggunakan Cuaca Golang! 🌤️💻
+Thank you for using Cuaca Golang! 🌤️💻
